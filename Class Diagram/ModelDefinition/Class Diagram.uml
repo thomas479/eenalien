@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="749c4daa-de1d-413c-8a88-425ea9e47319"
+  name="Class Diagram" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="2e387dd1-6599-4be1-92df-ded8501495a8"
+        name="Program"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="63dc8552-aa25-4ad7-93fc-df3531a8736f"
+            isDerived="false"
+            sourceEndRoleName="Program"
+            targetEndRoleName="GameLoop"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="21073ef3-0651-450f-97dc-1e6679020d29"
+              LastKnownName="GameLoop"
+              LastKnownLocation="Class Diagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a5b4482e-135f-4588-b57f-ffddb0f938b9"
+                  name="Program"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b79ffe8-a7f8-4d95-b3b4-3c82607b3f32"
+                  name="GameLoop"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="7c7457d6-aadc-48d9-9e54-d413a5e377ec"
+            name="Main"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="21073ef3-0651-450f-97dc-1e6679020d29"
+        name="GameLoop"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1bb5d5c9-7e88-4a05-b7fa-1df5e7b847e3"
+            name="bool Running"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="212b9854-bdf7-42d7-9021-a5394c867d75"
+            name="void Running"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="adc7a2df-a931-46ab-b3e3-49897204bc01"
+        name="PlayerModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="df617a92-cd98-4f0c-b4a9-67ccbd685e6b"
+        name="Player2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4dde8e29-d752-47fa-983b-767308f2adb0"
+        name="MainMenuView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4d57e8dd-01d0-4dbc-bc9f-cecfdbac478a"
+        name="MainMenuController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="61b77627-5e9d-40e9-8332-0dfe0e5b79bf"
+            name="SelectLevel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7d02b391-7b7b-4470-be58-1f157633a7c2"
+            name="CloseGame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4a42bb66-f666-45a4-81b4-da8b47bab225"
+        name="XMLHandler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0c35a80c-5378-4823-bdd6-bf9447df6a8a"
+        name="LevelModel1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="f17ecc8b-a6a7-4ea0-ad86-2039f3107d00"
+            name="GetHighscores"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="52200349-b557-425c-8d45-6cb28457910f"
+                  name="Level level"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="871d0ff2-4721-4dd3-9b3b-9beacc7d6279"
+        name="Levels"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="87cfb283-7005-406f-ba15-db551bb3dac2"
+        name="Girl"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a14259ae-ceca-4975-896c-4db17a8e7283"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d51760e1-f9c3-4477-9f59-2530f2b8302a"
+              LastKnownName="Enemy"
+              LastKnownLocation="Package1_1010.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6890a783-4042-4175-ac91-193b83c668e5"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d7916c3e-ce14-4a06-87ff-59281cc67f67"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d51760e1-f9c3-4477-9f59-2530f2b8302a"
+              LastKnownName="Enemy"
+              LastKnownLocation="Package1_1010.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="4fc98e63-f1fc-4946-90dd-0a44eb839aca"
+        name="Orientations"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="9b88923c-d175-400d-84ff-179ea26b73bd"
+            name="1 North" />
+          <enumerationLiteral
+            Id="21976c4a-3ed8-4aea-8ba8-94eb1c231c4a"
+            name="2 East" />
+          <enumerationLiteral
+            Id="d19d9873-9f26-4f71-adad-ce20de716de2"
+            name="3 South" />
+          <enumerationLiteral
+            Id="065f7566-c64e-4c0f-97da-a9e0a2febc4d"
+            name="4 West" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b9dd289a-5065-40cc-b90e-c0cf42b69256"
+        LastKnownName="Model"
+        LastKnownLocation="Package_1010.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="40f4c93b-fb41-4310-8fa1-d0ddd939a78b"
+        LastKnownName="View"
+        LastKnownLocation="Package1_1010.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="dc0844e4-e151-4469-9e15-812beb19cc95"
+        LastKnownName="Controller"
+        LastKnownLocation="Package2_1010.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

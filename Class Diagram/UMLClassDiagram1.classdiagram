@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e13de4b7-7efb-402a-bde3-020b28d03d8f" name="UMLClassDiagram1" linkedPackageId="f6d5525b-49e1-46ec-a3a1-98d45dc5e378" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8c878e4d-0564-4186-a9b9-051b8d2a774c" name="Program" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2e387dd1-6599-4be1-92df-ded8501495a8" />
+        <targetEnds>
+          <association Id="24801414-5392-4dd7-ac69-965f3dd39034" isDerived="false" sourceEndRoleName="Program" targetEndRoleName="GameLoop" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4eccec25-ea2c-4a04-bb92-2856c480f814" LastKnownName="GameLoop" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b2dbe8f2-b05c-4c9c-a86e-b9fbd8f5daed" name="Program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a5b4482e-135f-4588-b57f-ffddb0f938b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb6bbab8-d69d-4da1-86d4-cce75c505e2e" name="GameLoop" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9b79ffe8-a7f8-4d95-b3b4-3c82607b3f32" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="63dc8552-aa25-4ad7-93fc-df3531a8736f" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="7d4d60de-39a2-4cbf-a302-5c71c9240686" name="Main" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7c7457d6-aadc-48d9-9e54-d413a5e377ec" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4eccec25-ea2c-4a04-bb92-2856c480f814" name="GameLoop" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="21073ef3-0651-450f-97dc-1e6679020d29" />
+        <ownedAttributesInternal>
+          <property Id="0bb458b9-ea6e-4868-adc1-d8cac126cc72" name="bool Running" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1bb5d5c9-7e88-4a05-b7fa-1df5e7b847e3" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3bb6982b-3562-4d71-82a1-0c7c3c987109" name="void Running" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="212b9854-bdf7-42d7-9021-a5394c867d75" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="1a867375-0ba0-4a54-8b0f-26d3e89f4958" name="Model">
+        <elementDefinition Id="b9dd289a-5065-40cc-b90e-c0cf42b69256" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="b75c9310-2d8e-4f8c-a435-df359870b1e7" name="Level" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4a543d7c-7bf5-4329-a60b-6f5c1fedf87a" />
+              <ownedAttributesInternal>
+                <property Id="93524dce-2d8d-46c1-8528-5d08a4204781" name="string Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="41445477-a564-42d8-a6a3-82ee45b5daae" />
+                </property>
+                <property Id="a2012d69-8962-46f0-b108-35f501fbc4c0" name="int Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c130a548-4671-47d8-aa97-f16bddba69b7" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9d2c5a5e-2870-452c-99a2-9ad15d75a72b" name="Highscores" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4446fdb4-be2a-4c5e-8682-7258ce8fe047" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0d1bbaff-8dea-4a11-afe0-31957c626a81" name="Help" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="bd4552c1-1a9b-4b05-9b9f-a468d331945f" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="8a1b912b-7117-4cbc-b520-b854b55bab85" name="Entity" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="29c13d8f-3ace-4760-b722-daf6515a0e63" />
+              <ownedAttributesInternal>
+                <property Id="4cba103f-3cf4-4a44-b3ad-ec543d081575" name="bool Moveable" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a153c869-a240-41d4-a0a3-9ef27c052a35" />
+                </property>
+                <property Id="bcd95739-2fa7-4b6d-8733-65807300a5bc" name="string Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b13360aa-c5e9-4b34-96ce-ac0f6556b0e9" />
+                </property>
+                <property Id="5a78b930-bcb3-48ed-b909-d34673bc3c2e" name="Sprite sprite" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4a9e1c4d-7c00-446c-b7a6-7ae42cd7eef7" />
+                </property>
+                <property Id="1f425b7a-092a-4197-b6f4-58c0086fb432" name="bool Solid" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ed3624d7-5f38-4344-ac2b-27459d29e31d" />
+                </property>
+                <property Id="8d43dadd-45be-4f6c-a119-c01042e50036" name="int Rotation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="47bb6828-21ec-4c59-b3a2-b3c71b7e5709" />
+                </property>
+                <property Id="21df1fee-a134-4a1f-9adb-9b3f31223ef5" name="bool Moving" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f7fd7a8-230b-4b9f-93fa-6351bb037177" />
+                </property>
+                <property Id="56ffba20-1eec-454f-ae1f-3bd35a5272d0" name="Vector2 position" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f76fbcf-37e3-4e4e-8238-0dc46c5c924e" />
+                </property>
+                <property Id="d7c1fcf7-a5c0-4c5f-a04e-afc75d3360b5" name="int Health" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fb18494e-518d-4185-8d30-68df92f8fa2a" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="53843214-30a1-4993-8ee2-956177c5895d" name="Enemy" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d0625bd4-3889-4202-9677-ed08029ddd8e" />
+              <ownedAttributesInternal>
+                <property Id="a1ddf02e-2e93-4dbc-906b-4c5d48eb3f7d" name="List&lt;Skill&gt; skill" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8e9940d0-a54e-4289-86c8-22c6ce50af77" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1ad36489-f871-49f1-81c3-d6e20e746564" name="Skill" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d4b18a52-f97f-455f-8b80-3cafa4c00326" />
+              <ownedAttributesInternal>
+                <property Id="c03246c6-3e18-414d-867c-3344c564af0a" name="bool Damage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c0a937dc-0503-4982-accc-06ffabed5aae" />
+                </property>
+                <property Id="5acf4739-f509-4c0e-a67b-da78f2fc900b" name="int DamagePoints" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a79b1d3c-9f12-4a40-99f9-9d9b41e18fde" />
+                </property>
+                <property Id="937f7302-f54d-4b19-8764-97656b43ea5f" name="bool Explosive" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cd90d526-46b2-45af-8b85-35752ccfd976" />
+                </property>
+                <property Id="314d798c-0649-416d-949e-c5245d1f08fb" name="bool AttractsToPlayer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1e84c7e5-82c6-412f-8995-5bb6fdf032a4" />
+                </property>
+                <property Id="a7f40426-fdbe-41f3-a777-e3b03bd1513d" name="int RangeToAttract" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7892a13a-8e32-4a75-862e-c35de45f1e15" />
+                </property>
+                <property Id="e82a22cf-f7d8-4ba6-b9dc-955119337d76" name="int ExplosiveRange" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="53280621-baa5-4a93-9648-a2ed4f04d0cc" />
+                </property>
+                <property Id="6583f979-af95-47c3-b902-7a10917d67d0" name="string SkillName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3934ca5f-1fc5-4202-a0ac-7075d9cb18f0" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="67001560-4de3-4382-bd82-c3ef00d9c832" name="Sprite" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="098e5d32-0d2a-41d9-bff5-690a9f94c23c" />
+              <ownedAttributesInternal>
+                <property Id="f5af50dd-9430-476b-92c3-e671221a0f97" name="Size size" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="deab7f83-3032-4a69-adf7-a153214a5fc9" />
+                </property>
+                <property Id="5496e481-5ce5-4478-a54d-18418ee73ac1" name="string Path" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d103958b-3cff-4409-b257-7c0a1e21c973" />
+                </property>
+                <property Id="f9c99832-874f-42b4-b4fb-a560b30f65d8" name="List&lt;Vector2&gt; positions" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7166008c-65ef-45e4-aa40-2dcd13ceb309" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="1dc4cd6a-d843-446c-a76e-4aa5f9e3a619" name="void animate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="eab4d6b5-0441-4f20-801f-31c2dcb9cffa" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="29b6c016-e6e6-4513-be71-0aa0d59f773f" name="View">
+        <elementDefinition Id="40f4c93b-fb41-4310-8fa1-d0ddd939a78b" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="71fb6a8a-8b25-4fd0-a63b-5d379580088e" name="Menu" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="af20bcba-556e-4d3c-8e54-16e5deaaf1c8" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="2d998413-4fbd-418d-9846-d8dc63aeb2b4" name="Highscores" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d85b2141-5098-4dd1-ad33-79873b6063d3" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0cb80eda-a150-46d2-9613-a65df8193dab" name="Help" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e2b8ad12-749f-4920-8514-d37b4301dff3" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9d84eec0-e385-49b3-b8e1-906738641271" name="Player" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e7a36625-7d9c-4939-a881-c76b83041fcb" />
+              <ownedOperationsInternal>
+                <operation Id="a92783ca-30b8-421e-8cd0-deab5f4e6d6f" name="MoveUp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="cbacec70-9310-421f-81a3-c3d4af0ceab1" />
+                </operation>
+                <operation Id="811be3bf-eb27-4b1e-bc12-0fb6a4178cf5" name="MoveDown" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bfb12aac-fc5a-48aa-b4b4-b161d744388d" />
+                </operation>
+                <operation Id="47e940f7-ed91-4434-aa53-d63d8f7b6bdc" name="MoveLeft" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="962b7493-afe3-4b61-9235-bcf5444f212e" />
+                </operation>
+                <operation Id="27c22d27-0713-44e2-97f1-daa4a0d4ac68" name="MoveRight" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a2310f2c-a567-4aa3-94d1-3e790fcda33f" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="06f2c786-e283-4f09-902e-65f42d0ed435" name="Enemy" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d51760e1-f9c3-4477-9f59-2530f2b8302a" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="20034d7c-3d06-41f7-b3b2-f380f44b0790" name="Controller">
+        <elementDefinition Id="dc0844e4-e151-4469-9e15-812beb19cc95" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="7c6183c3-f8bd-47bc-be39-fc2d79568bf3" name="Menu" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1931722f-74b6-4d81-9809-c8303ca7c680" />
+              <ownedOperationsInternal>
+                <operation Id="f8d4d56e-df8b-45b0-93d5-bef113d8a5e2" name="ViewHighscore" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="04be522e-ae09-46d1-b9bf-7f8de2aa5a43" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9003b251-9be5-47e2-878a-e1ecc569297d" name="Level level" direction="In" isUnique="false">
+                        <elementDefinition Id="54490cc8-474e-4c6c-984b-4b0a895e72d9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="1b340de3-77cb-4b40-8b24-dbaf942b9ad3" name="GetPlayableLevels" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8707c107-3ead-4a84-87d9-7a7303db4b7d" />
+                </operation>
+                <operation Id="b3ec21d5-e080-4eb9-a3d5-dccef21ab7cf" name="StartGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="be13c819-1082-47e8-b3aa-e1f0f5deea74" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="17c1d5bc-96b6-4946-89e5-651a2a885bf2" name="Level level" direction="In" isUnique="false">
+                        <elementDefinition Id="85146b3b-1bb7-4b55-9474-2aec8f444cf5" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="d07c36ad-129e-4fc1-a207-cc877fdd2fca" name="CloseGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="cf67fcaf-5eae-4702-9960-2c611791221c" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d477656d-ebf9-4fbd-906f-014ef9400a05" name="Highscores" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="88177f17-a920-4dd9-9b54-8b65210576cd" />
+              <ownedOperationsInternal>
+                <operation Id="c2fcead4-9e6f-4787-bbe7-5d036309c750" name="GetHighScores" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2199bdb2-31f3-4dfe-a28d-7a7b18ec4254" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="71824306-9aea-4bd1-abeb-9073cc6f3889" name="Help" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c034edcf-97a3-4a0f-96b4-de6e81db7e3b" />
+              <ownedOperationsInternal>
+                <operation Id="68e9f8ff-26c1-48a5-880b-ba7b97eb3ccb" name="GetHelpHTML" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="da2791c8-c735-4983-9196-2c0b933ea028" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="49a37d97-e1f3-4cae-b81f-8e50cbe29251" name="Entity" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d44dcd88-824f-4694-980b-8b0b46132e16" />
+              <ownedOperationsInternal>
+                <operation Id="6eb666f9-32a2-4f68-83a8-21705dab9ac2" name="Move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a75164ad-f46b-4d48-b8ad-d37d5862de6f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="eba74858-1ec2-4ae0-8cc0-1589ce1e50bf" name="Vector2 newPosition" direction="In" isUnique="false">
+                        <elementDefinition Id="f5486e7d-9872-497d-8702-c22cd056f035" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="35c99600-6fbc-4a92-9d4e-b6891445904d" name="SetHealth" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a0f84c0c-f84c-4e75-a1fd-26892336be89" />
+                </operation>
+                <operation Id="8ce1265e-e4d9-4911-b54e-3f0a0875b98d" name="SetName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="11951b34-a654-49fa-ae58-ec408a6a8a15" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="443c8b2c-a90d-45d5-bddb-27e79bf30d76" name="Enemy" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6d2d5359-90f9-4664-9ae0-14ea0305e964" />
+              <ownedOperationsInternal>
+                <operation Id="08688052-d489-47d5-b1dd-064486a69941" name="void DealDamage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d55207b2-6b33-4f74-b822-d8ca7ef5dc5e" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ca5259d5-faee-4c89-a62e-66ab49b2583a" name="Level" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1fbf13a2-b7a2-4405-96fc-f809181bda22" />
+              <ownedOperationsInternal>
+                <operation Id="e12acd8f-5520-40a7-9fdb-0f26f239d41e" name="LoadLevel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="3b7fd921-8e0c-480b-8c71-7003c98111c4" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="726ced60-5bf3-4a00-bc3f-bee79f3b62bf" name="int levelId" direction="In" isUnique="false">
+                        <elementDefinition Id="2dcb2284-3d95-450b-880b-aae289bcdaaf" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="f6d5525b-49e1-46ec-a3a1-98d45dc5e378" name="Class Diagram">
+    <elementDefinition Id="749c4daa-de1d-413c-8a88-425ea9e47319" />
+    <profileInstances>
+      <packageHasProfileInstances Id="246abef2-ff76-4b92-9c97-b47ca26226d7">
+        <profileInstance Id="d96fb51c-4a40-4719-bf7b-0ddbf523c400" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5fa28cea-6626-405b-9608-6a20a4e9a57c">
+        <profileInstance Id="76b1b4e6-27cf-4209-a1a9-97187327fec0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
